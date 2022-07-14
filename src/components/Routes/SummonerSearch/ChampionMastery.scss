@@ -1,0 +1,33 @@
+.championMastery__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 5rem;
+
+    .championMastery__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        position: relative;
+
+        .championMastery__box-avatar{
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .maestry{
+            position: absolute;
+            width: 10%;
+            top: 0;
+            right: 1;
+            margin-top: 1.5rem;
+            margin-left: 30%;
+
+        }
+    }
+}

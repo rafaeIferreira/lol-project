@@ -1,0 +1,240 @@
+.rank__section{
+    width: 100%;
+
+    //NAVBAR SECTION ------------------------>
+    .container__nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .1rem;
+        .dropdown{
+            margin-right: 2rem;
+            .btn{
+                color: white;
+                background-color: black;
+            }
+        }
+    }
+
+    //OffCanva section --------------->
+
+    .offcanva__container{
+        margin-top: 5rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .offcanva__btn{
+            background-color: black;
+            color: white;
+        }
+
+        //OffCanvas body section ----------->
+        .offcanvas-body{
+
+            .offcanvas__region-btn{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+            }
+
+            .queue__type{
+                margin-top: 2rem;
+            }
+
+            .tier{
+                margin-top: 2rem;
+            }
+
+            .division{
+                margin-top: 2rem;
+            }
+
+            .filter__btn{
+                margin-top: 2rem;
+                background-color: black;
+                color: white;
+            }
+        }
+
+        .btn-off{
+            background-color: rgb(85, 85, 85);
+            color: white;
+        }
+
+        .btn-on{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .podium{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(75, 124, 196);
+        padding: 40px 0;
+        margin-top:50px;
+
+        .first__place{
+            width: 140px;
+            padding: 25px 25px;
+            border-radius: 25%;
+            position: relative;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .first__place-link{
+                text-decoration: none;
+                color: #ffffff;
+            }
+            .first__place-link:hover{
+                text-decoration: underline;
+                color: #b3b3b3;
+            }
+
+
+            .one{
+                color: #cecc48;
+                position: absolute;
+                text-align: center;
+                margin-top: 110px;
+            }
+        }
+
+        .sec-thrd__place{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+
+            .second__place{
+                width: 140px;
+                padding: 25px 25px;
+                border-radius: 25%;
+                position: relative;
+                background-color: rgb(0, 0, 0);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .second__place-link{
+                    text-align: center;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                .second__place-link:hover{
+                    text-decoration: underline;
+                    color: #b3b3b3;
+                }
+
+                .two{
+                    color: #cccccc;
+                    position: absolute;
+                    text-align: center;
+                    margin-top: 110px;
+                }
+            }
+
+            .third__place{
+                width: 140px;
+                padding: 25px 25px;
+                border-radius: 25%;
+                position: relative;
+                background-color: rgb(0, 0, 0);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                .third__place-link{
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+                .third__place-link:hover{
+                    text-decoration: underline;
+                    color: #b3b3b3;
+                }
+
+                .three{
+                    color: #d4a358;
+                    position: absolute;
+                    text-align: center;
+                    margin-top: 110px;
+                }
+            }
+        }
+    }
+
+    .rankDown{
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        .rankDown__example{
+            width: 66%;
+            padding: 10px;
+            margin-left: 15%;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .rankDown__players{
+            width: 70%;
+            margin-left: 15%;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid rgb(211, 211, 211);
+
+            .rankDown__players-player{
+                text-decoration: none;
+                color: #000000;
+            }
+            .rankDown__players-player:hover{
+                text-decoration: underline;
+                color: #000000;
+            }
+        }
+        
+    }
+
+
+}
+
+@media screen and (max-width:430px) {
+
+    .rankDown__example{
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+    .rankDown__players{
+        width: 100% !important;
+        margin-left: 0px !important;
+        display: flex;
+        justify-content: space-between !important;
+    }
+}
