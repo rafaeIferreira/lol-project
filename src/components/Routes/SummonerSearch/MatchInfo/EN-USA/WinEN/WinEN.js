@@ -114,13 +114,7 @@ const WinEN = ({queueId, res, id, runes, dateGame})=>{
                         </div>
 
                         <div className="runes__container">
-                            <div className="primary">
-                                <img className="runes__primary" src={`https://ddragon.canisback.com/img/${perksSelectPrimary()}`}/>
-                            </div>
-                        
-                            <div className="secondary">
-                                <img src={`https://ddragon.canisback.com/img/${perksSelectSecondary()}`}/>
-                            </div>
+
 
                         </div>
 
