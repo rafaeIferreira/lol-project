@@ -10,11 +10,11 @@ const WinPT = ({queueId, res, id, runes, dateGame})=>{
         let i =0;
         let j = 0;
         let k =0;
-        
-        for(i=0; i< runes.data.length; i++){
+
+        for(i=0; i< 5; i++){
             if(runes.data[i].id === id.perks.styles[0].style){
-                console.log()
-                for(j=0; j<runes.data[i].slots[0].runes.length; j++){
+                
+                for(j=0; j<4; j++){
                     if(runes.data[i].slots[0].runes[j].id === id.perks.styles[0].selections[0].perk){
                         setPrimary(runes.data[i].slots[0].runes[j].icon);
                     }
@@ -23,11 +23,12 @@ const WinPT = ({queueId, res, id, runes, dateGame})=>{
         }
 
 
-        for(k=0; k<runes.data.length;k++){
+        for(k=0; k<5;k++){
             if(runes.data[k].id === id.perks.styles[1].style){
                 setSecondary(runes.data[k].icon);
             }
         }
+
     },[])
 
     return(
