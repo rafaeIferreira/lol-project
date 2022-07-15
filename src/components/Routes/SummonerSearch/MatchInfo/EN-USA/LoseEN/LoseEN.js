@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../MatchInfo.scss";
 import {capitalizeFirstLetter} from '../../MatchInfo';
 import { switchspell} from "../../MatchInfo";
@@ -6,32 +6,32 @@ import { switchspell} from "../../MatchInfo";
 
 
 const LoseEN = ({queueId, res, id, runes, dateGame})=>{
+    const [primary, setPrimary] = useState('');
+    const [secondary, setSecondary] = useState('');
 
-    function perksSelectPrimary(){
+    useEffect(()=>{
         let i =0;
         let j = 0;
+        let k =0;
     
         for (i of runes.data){
             if(i.id === id.perks.styles[0].style){
                 for(j of i.slots[0].runes ){
                     if(j.id === id.perks.styles[0].selections[0].perk){
-                        return(j.icon)
+                        setPrimary(j.icon);
                     }
                 }
             }
         }
-    }
 
 
-    function perksSelectSecondary(){
-        let i =0;
-
-        for(i of runes.data){
-            if (i.id === id.perks.styles[1].style){
-                return(i.icon);
+        for(k of runes.data){
+            if (k.id === id.perks.styles[1].style){
+                setSecondary(k.icon);
             }
         }
-    }
+
+    },[])
 
     return(
         <div className="match__container-box lose__box">
@@ -115,7 +115,16 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
                         
                         </div>
                         <div className="runes__container">
+                            {primary !== '' &&
+                            <div className="primary">
+                                <img className="runes__primary" src={`https://ddragon.canisback.com/img/${primary}`}/>
+                            </div>}
+                        
+                            {secondary !== '' &&
+                            <div className="secondary"> 
+                                <img src={`https://ddragon.canisback.com/img/${secondary}`}/>
 
+                            </div>}
 
                         </div>
 
