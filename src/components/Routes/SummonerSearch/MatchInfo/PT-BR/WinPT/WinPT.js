@@ -1,8 +1,36 @@
 import React from "react";
 import "../../MatchInfo.scss";
-import {capitalizeFirstLetter, switchspell, perksSelectPrimary, perksSelectSecondary } from "../../MatchInfo";
+import {capitalizeFirstLetter, switchspell} from "../../MatchInfo";
 
 const WinPT = ({queueId, res, id, runes, dateGame})=>{
+
+    
+    function perksSelectPrimary(runes, id){
+        let i =0;
+        let j = 0;
+    
+        for (i of runes.data){
+            if(i.id === id.perks.styles[0].style){
+                for(j of i.slots[0].runes ){
+                    if(j.id === id.perks.styles[0].selections[0].perk){
+                        return(j.icon)
+                    }
+                }
+            }
+        }
+    }
+
+
+    function perksSelectSecondary(runes, id){
+        let i =0;
+
+        for(i of runes.data){
+            if (i.id === id.perks.styles[1].style){
+                return(i.icon);
+            }
+        }
+    }
+
     return(
         <div className="match__container-box win__box">
 
