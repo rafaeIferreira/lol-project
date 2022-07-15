@@ -14,6 +14,31 @@ import MatchInfoPT from "./PT-BR/MatchInfoPT";
         }
     }
 
+    export function perksSelectPrimary(runes, id){
+        let i =0;
+        let j = 0;
+    
+        for (i of runes.data){
+            if(i.id === id.perks.styles[0].style){
+                for(j of i.slots[0].runes ){
+                    if(j.id === id.perks.styles[0].selections[0].perk){
+                        return(j.icon)
+                    }
+                }
+            }
+        }
+    }
+
+    export function perksSelectSecondary(runes, id){
+        let i =0;
+
+        for(i of runes.data){
+            if (i.id === id.perks.styles[1].style){
+                return(i.icon);
+            }
+        }
+    }
+
     
 
     {/*SWITCH SPELL ID */}

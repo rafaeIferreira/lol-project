@@ -1,9 +1,13 @@
 import React from "react";
 import "../../MatchInfo.scss";
 import {capitalizeFirstLetter} from '../../MatchInfo';
-import { switchspell } from "../../MatchInfo";
+import { switchspell, perksSelectPrimary, perksSelectSecondary } from "../../MatchInfo";
+
+
 
 const LoseEN = ({queueId, res, id, runes, dateGame})=>{
+
+
 
     return(
         <div className="match__container-box lose__box">
@@ -88,36 +92,12 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
                         </div>
                         <div className="runes__container">
                             <div className="primary">
-                            {runes.data.map((ress)=>
-                            <>
-                                {(ress.id === id.perks.styles[0].style &&
-                                    <>
-                                    {ress.slots[0].runes.map((runeids)=>
-                                    <>
-
-                                        {(runeids.id === id.perks.styles[0].selections[0].perk &&
-                                            <>
-                                                <img className="runes__primary" src={`https://ddragon.canisback.com/img/${runeids.icon}`}/>
-                                            </>
-                                        )}
-                                    </>
-                                    )}
-                                    </>     
-                                )}
-                                </>
-                            )}
+                                <img className="runes__primary" src={`https://ddragon.canisback.com/img/${perksSelectPrimary(runes, id)}`}/>
                             </div>
                         
                             <div className="secondary"> 
-                            {runes.data.map((res)=>
-                            <>
-                                {(res.id === id.perks.styles[1].style &&
-                                    <>
-                                    <img src={`https://ddragon.canisback.com/img/${res.icon}`}/>
-                                    </>     
-                                )}
-                                </>
-                            )}
+                                <img src={`https://ddragon.canisback.com/img/${perksSelectSecondary(runes,id)}`}/>
+
                             </div>
 
                         </div>
