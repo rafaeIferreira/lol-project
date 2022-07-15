@@ -7,7 +7,7 @@ import { switchspell} from "../../MatchInfo";
 
 const LoseEN = ({queueId, res, id, runes, dateGame})=>{
 
-    function perksSelectPrimary(runes, id){
+    function perksSelectPrimary(){
         let i =0;
         let j = 0;
     
@@ -23,7 +23,7 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
     }
 
 
-    function perksSelectSecondary(runes, id){
+    function perksSelectSecondary(){
         let i =0;
 
         for(i of runes.data){
@@ -116,11 +116,11 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
                         </div>
                         <div className="runes__container">
                             <div className="primary">
-                                <img className="runes__primary" src={`https://ddragon.canisback.com/img/${perksSelectPrimary(runes, id)}`}/>
+                                <img className="runes__primary" src={`https://ddragon.canisback.com/img/${perksSelectPrimary()}`}/>
                             </div>
                         
                             <div className="secondary"> 
-                                <img src={`https://ddragon.canisback.com/img/${perksSelectSecondary(runes,id)}`}/>
+                                <img src={`https://ddragon.canisback.com/img/${perksSelectSecondary()}`}/>
 
                             </div>
 
