@@ -26,7 +26,7 @@ const Default=()=>{
 
     useEffect(()=>{
         const load= async ()=>{
-            const res = await axios.get('http://ddragon.leagueoflegends.com/cdn/12.12.1/data/en_US/champion.json');
+            const res = await axios.get('./ddragon.json');
             setSplash(res);
             var i = 1;
             
