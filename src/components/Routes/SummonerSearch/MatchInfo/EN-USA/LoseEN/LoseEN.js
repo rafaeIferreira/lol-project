@@ -90,7 +90,7 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
             break;
         }
 
-        switch(id.perks.styles[0].style){
+        switch(id.perks.styles[1].style){
             case 8100:
                 setSecondary("perk-images/Styles/7200_Domination.png")
             break;
