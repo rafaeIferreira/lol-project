@@ -121,7 +121,7 @@ const WinEN = ({queueId, res, id, runes, dateGame})=>{
                         )}
                     </>
                     )}
-                    <p>Win</p>
+                    <p>Victory</p>
                     <p>{id.summonerName}</p>
                         <div className="match__container__info">
                             <img className="match__container__info-image" src={`http://ddragon.leagueoflegends.com/cdn/12.11.1/img/champion/${capitalizeFirstLetter(id.championName)}.png`}/>
