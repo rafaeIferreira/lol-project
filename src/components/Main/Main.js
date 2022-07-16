@@ -8,7 +8,7 @@ import {
   import Default from '../Routes/Default/Default'
   import SummonerSearch from '../Routes/SummonerSearch/SummonerSearch';
   import Rank from '../Routes/Rank/Rank';
-  const API_KEY = "RGAPI-1d81a506-eeb5-4ff2-bb25-e186a2c0333a";
+  const API_KEY = "RGAPI-bf5873eb-c25e-45d4-bca7-f283ac733c14";
 const Main = ()=>{
     return(
         <div>

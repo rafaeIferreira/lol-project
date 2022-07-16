@@ -10,11 +10,106 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
     const [secondary, setSecondary] = useState('');
 
     useEffect(()=>{
+        /*
         let i =0;
         let j = 0;
         let k =0;
+        */
+        
+        switch(id.perks.styles[0].style){
+            case 8100:
+                switch(id.perks.styles[0].selections[0].perk){
+                    case 8112:
+                        setPrimary("perk-images/Styles/Domination/Electrocute/Electrocute.png");
+                        break;
+                    case 8124:
+                        setPrimary("perk-images/Styles/Domination/Predator/Predator.png");
+                        break;
+                    case 8128:
+                        setPrimary("perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png");
+                        break;
+                    case 9923:
+                        setPrimary("perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png");
+                        break;
+                }
+            break;
+            case 8300:
+                switch(id.perks.styles[0].selections[0].perk){
+                    case 8351:
+                        setPrimary("perk-images/Styles/Inspiration/GlacialAugment/GlacialAugment.png")
+                        break;
+                    case 8360:
+                        setPrimary("perk-images/Styles/Inspiration/UnsealedSpellbook/UnsealedSpellbook.png")
+                        break;
+                    case 8358:
+                        setPrimary("perk-images/Styles/Inspiration/MasterKey/MasterKey.png")
+                        break;
+                }
+            break;
+            case 8000:
+                switch(id.perks.styles[0].selections[0].perk){
+                    case 8005:
+                        setPrimary("perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png")
+                        break;
+                    case 8008:
+                        setPrimary("perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png")
+                        break;
+                    case 8021:
+                        setPrimary("perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png")
+                        break;
+                    case 8010:
+                        setPrimary("perk-images/Styles/Precision/Conqueror/Conqueror.png")
+                        break;
+                }
+            break;
+            case 8400:
+                switch(id.perks.styles[0].selections[0].perk){
+                    case 8437:
+                        setPrimary("perk-images/Styles/Resolve/GraspOfTheUndying/GraspOfTheUndying.png")
+                        break;
+                    case 8439:
+                        setPrimary("perk-images/Styles/Resolve/VeteranAftershock/VeteranAftershock.png")
+                        break;
+                    case 8465:
+                        setPrimary("perk-images/Styles/Resolve/Guardian/Guardian.png")
+                        break;
+                }
+            break;
+            case 8200:
+                switch(id.perks.styles[0].selections[0].perk){
+                    case 8214:
+                        setPrimary("perk-images/Styles/Sorcery/SummonAery/SummonAery.png")
+                        break;
+                    case 8229:
+                        setPrimary("perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png")
+                        break;
+                    case 8230:
+                        setPrimary("perk-images/Styles/Sorcery/PhaseRush/PhaseRush.png")
+                        break;
+                }
+            break;
+        }
 
+        switch(id.perks.styles[0].style){
+            case 8100:
+                setSecondary("perk-images/Styles/7200_Domination.png")
+            break;
+            case 8300:
+                setSecondary("perk-images/Styles/7203_Whimsy.png")
+                break;
+                case 8000:
+                    setSecondary("perk-images/Styles/7201_Precision.png")
+                break;
+                case 8400:
+                    setSecondary("perk-images/Styles/7204_Resolve.png")
+                break;
+                case 8200:
+                    setSecondary("perk-images/Styles/7202_Sorcery.png")
+                break;
+        }
+    /*
         for(i=0; i< 5; i++){
+            console.log(runes)
             if(runes.data[i].id === id.perks.styles[0].style){
                 
                 for(j=0; j<4; j++){
@@ -24,7 +119,11 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
                 }
             }
         }
-    /*
+        */
+       
+
+        /*
+
         for (i of runes.data){
             if(i.id === id.perks.styles[0].style){
                 for(j of i.slots[0].runes ){
@@ -35,12 +134,13 @@ const LoseEN = ({queueId, res, id, runes, dateGame})=>{
             }
         }
     */
-    
+    /*
     for(k=0; k<5;k++){
         if(runes.data[k].id === id.perks.styles[1].style){
             setSecondary(runes.data[k].icon);
         }
     }
+    */
 
     /*
         for(k of runes.data){
