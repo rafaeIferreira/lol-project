@@ -4,7 +4,6 @@ import './Rank.scss';
 import axios from 'axios';
 import SummonerInfo from "./SummonerInfo";
 
-
 const Rank = ({KEY})=>{
     const API_KEY = KEY;
     const [lang,setLang] = useState('en-usa');
@@ -98,11 +97,13 @@ const Rank = ({KEY})=>{
         </div>
 
         <div className="offcanva__container">
-            <button class="btn offcanva__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Choose tier</button>
+            {lang === 'en-usa' && <button class="btn offcanva__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Select tier</button>}
+            {lang === 'pt-br' && <button class="btn offcanva__btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Selecionar Divisão</button>}
 
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Tier Select</h5>
+                {lang === 'en-usa' && <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Tier Select</h5>}
+                {lang === 'pt-br' && <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Selecionar Elo</h5>}
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
@@ -110,7 +111,8 @@ const Rank = ({KEY})=>{
 
                 {/*REGION SECTION OFFCANVA ---------------------- */}
                 <div className="offcanvas__region-btn">
-                    <h3>Region</h3>
+                    {lang === 'en-usa' && <h3>Region</h3>}
+                    {lang === 'en-usa' && <h3>Região</h3>}
                     <div class="dropdown">
                         <a class="btn btn-secondary btn-sm  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
                             {buttonRegion}
@@ -133,7 +135,8 @@ const Rank = ({KEY})=>{
                 </div>
 
                 <div className="queue__type">
-                    <h3>Queue Type</h3>
+                    {lang === 'en-usa' && <h3>Queue Type</h3>}
+                    {lang === 'pt-br' && <h3>Tipo de Fila</h3>}
                     <div class="dropdown">
                     <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
                         {queueBtn.toUpperCase()}
@@ -147,7 +150,8 @@ const Rank = ({KEY})=>{
                 </div>
 
                 <div className="tier">
-                    <h3>Tier</h3>
+                    {lang === 'en-usa' && <h3>Tier</h3>}
+                    {lang === 'pt-br' && <h3>Elo</h3>}
                     <div class="dropdown">
                     <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
                         {tier}
@@ -169,7 +173,8 @@ const Rank = ({KEY})=>{
 
                 {(tier !== 'Select Tier' &&
                 <div className="division">
-                    <h3>Division</h3>
+                    {lang === 'en-usa' && <h3>Division</h3>}
+                    {lang === 'pt-br' && <h3>Divisão</h3>}
                     <div class="dropdown">
                     <a class="btn btn-secondary btn-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
                         {division}
@@ -191,7 +196,8 @@ const Rank = ({KEY})=>{
                 </div>
                 )}
 
-                <button onClick={()=>{setPage(1);fetchUrl(); setRes('')}} className="btn filter__btn" data-bs-dismiss="offcanvas">Filter</button>
+                {lang === 'en-usa' && <button onClick={()=>{setPage(1);fetchUrl(); setRes('')}} className="btn filter__btn" data-bs-dismiss="offcanvas">Filter</button>}
+                {lang === 'pt-br' && <button onClick={()=>{setPage(1);fetchUrl(); setRes('')}} className="btn filter__btn" data-bs-dismiss="offcanvas">Filtrar</button>}
 
                 </div>
             </div>
@@ -222,11 +228,18 @@ const Rank = ({KEY})=>{
             </div>
 
             <div className="rankDown">
+            {lang === 'en-usa' &&
             <div className="rankDown__example">
                 <h6>#</h6>
                 <h6>player</h6>
                 <h6>Tier</h6>
-            </div>
+            </div>}
+            {lang === 'pt-br' &&
+            <div className="rankDown__example">
+                <h6>#</h6>
+                <h6>Jogador</h6>
+                <h6>Elo</h6>
+            </div>}
             {res.data.map((result,i)=>
             <>
             {(page === 1 &&
