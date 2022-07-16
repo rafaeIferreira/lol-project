@@ -112,7 +112,7 @@ const Rank = ({KEY})=>{
                 {/*REGION SECTION OFFCANVA ---------------------- */}
                 <div className="offcanvas__region-btn">
                     {lang === 'en-usa' && <h3>Region</h3>}
-                    {lang === 'en-usa' && <h3>Região</h3>}
+                    {lang === 'pt-br' && <h3>Região</h3>}
                     <div class="dropdown">
                         <a class="btn btn-secondary btn-sm  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="true">
                             {buttonRegion}
