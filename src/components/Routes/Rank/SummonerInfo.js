@@ -30,8 +30,8 @@ const SummonerInfo = (props)=>{
         <div className="podiumm">
             {(res !== '' &&
             <>
-            <img className="podium__image" src={`http://ddragon.leagueoflegends.com/cdn/12.12.1/img/profileicon/${res.data.profileIconId}.png`}/>
-
+            <img className="podium__image" src={`http://ddragon.leagueoflegends.com/cdn/12.12.1/img/profileicon/${res.data.profileIconId}.png `} alt={`${res.data.name} profile image`}/>
+            {console.log(res)}
             </>
             )}
         </div>
