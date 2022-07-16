@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/project-league/static/css/main.73e2a637.css",
-    "main.js": "/project-league/static/js/main.481b037f.js",
-    "static/js/787.2cbcecb3.chunk.js": "/project-league/static/js/787.2cbcecb3.chunk.js",
-    "static/media/Emblem_CHALLENGER.png": "/project-league/static/media/Emblem_CHALLENGER.bcddbed6863c75984019.png",
-    "static/media/Emblem_MASTER.png": "/project-league/static/media/Emblem_MASTER.6cebbe60a644ce013839.png",
-    "static/media/Emblem_GRANDMASTER.png": "/project-league/static/media/Emblem_GRANDMASTER.9a64d7260df3f99028cd.png",
-    "static/media/Emblem_DIAMOND.png": "/project-league/static/media/Emblem_DIAMOND.8249cef116bf02ddd1bb.png",
-    "static/media/Emblem_PLATINUM.png": "/project-league/static/media/Emblem_PLATINUM.26c61fd5b19266948171.png",
-    "static/media/Emblem_BRONZE.png": "/project-league/static/media/Emblem_BRONZE.ad96bf19e0574bfb508f.png",
-    "static/media/Emblem_SILVER.png": "/project-league/static/media/Emblem_SILVER.ba09227683288589c6c1.png",
-    "static/media/Emblem_GOLD.png": "/project-league/static/media/Emblem_GOLD.617f139ec1ac6fc0f55c.png",
-    "static/media/Emblem_IRON.png": "/project-league/static/media/Emblem_IRON.9c3d63ce3cc7c09529b5.png",
-    "index.html": "/project-league/index.html",
-    "main.73e2a637.css.map": "/project-league/static/css/main.73e2a637.css.map",
-    "main.481b037f.js.map": "/project-league/static/js/main.481b037f.js.map",
-    "787.2cbcecb3.chunk.js.map": "/project-league/static/js/787.2cbcecb3.chunk.js.map"
+    "main.css": "/lol-project/static/css/main.73e2a637.css",
+    "main.js": "/lol-project/static/js/main.3dbbce6e.js",
+    "static/js/787.2cbcecb3.chunk.js": "/lol-project/static/js/787.2cbcecb3.chunk.js",
+    "static/media/Emblem_CHALLENGER.png": "/lol-project/static/media/Emblem_CHALLENGER.bcddbed6863c75984019.png",
+    "static/media/Emblem_MASTER.png": "/lol-project/static/media/Emblem_MASTER.6cebbe60a644ce013839.png",
+    "static/media/Emblem_GRANDMASTER.png": "/lol-project/static/media/Emblem_GRANDMASTER.9a64d7260df3f99028cd.png",
+    "static/media/Emblem_DIAMOND.png": "/lol-project/static/media/Emblem_DIAMOND.8249cef116bf02ddd1bb.png",
+    "static/media/Emblem_PLATINUM.png": "/lol-project/static/media/Emblem_PLATINUM.26c61fd5b19266948171.png",
+    "static/media/Emblem_BRONZE.png": "/lol-project/static/media/Emblem_BRONZE.ad96bf19e0574bfb508f.png",
+    "static/media/Emblem_SILVER.png": "/lol-project/static/media/Emblem_SILVER.ba09227683288589c6c1.png",
+    "static/media/Emblem_GOLD.png": "/lol-project/static/media/Emblem_GOLD.617f139ec1ac6fc0f55c.png",
+    "static/media/Emblem_IRON.png": "/lol-project/static/media/Emblem_IRON.9c3d63ce3cc7c09529b5.png",
+    "index.html": "/lol-project/index.html",
+    "main.73e2a637.css.map": "/lol-project/static/css/main.73e2a637.css.map",
+    "main.3dbbce6e.js.map": "/lol-project/static/js/main.3dbbce6e.js.map",
+    "787.2cbcecb3.chunk.js.map": "/lol-project/static/js/787.2cbcecb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73e2a637.css",
-    "static/js/main.481b037f.js"
+    "static/js/main.3dbbce6e.js"
   ]
 }
