@@ -28,7 +28,6 @@ const Default=()=>{
         const load= async ()=>{
             const res = await axios.get('ddragon.json');
             setSplash(res);
-            console.log(res)
             var i = 1;
             
             for (var [key, value] of Object.entries(res.data.data)) {
