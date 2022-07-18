@@ -37,6 +37,9 @@ const WinEN = ({queueId, res, id, runes, dateGame})=>{
                     case 8358:
                         setPrimary("perk-images/Styles/Inspiration/MasterKey/MasterKey.png")
                         break;
+                    case 8369:
+                        setPrimary("https://opgg-static.akamaized.net/images/lol/perk/8369.png")
+                        break;
                 }
             break;
             case 8000:
@@ -82,7 +85,7 @@ const WinEN = ({queueId, res, id, runes, dateGame})=>{
                 }
             break;
         }
-
+        console.log(id.perks.styles[0].selections[0].perk)
         switch(id.perks.styles[1].style){
             case 8100:
                 setSecondary("perk-images/Styles/7200_Domination.png")
