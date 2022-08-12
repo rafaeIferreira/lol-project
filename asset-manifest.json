@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lol-project/static/css/main.73e2a637.css",
-    "main.js": "/lol-project/static/js/main.952b200d.js",
+    "main.js": "/lol-project/static/js/main.140cbdfe.js",
     "static/js/787.2cbcecb3.chunk.js": "/lol-project/static/js/787.2cbcecb3.chunk.js",
     "static/media/Emblem_CHALLENGER.png": "/lol-project/static/media/Emblem_CHALLENGER.bcddbed6863c75984019.png",
     "static/media/Emblem_MASTER.png": "/lol-project/static/media/Emblem_MASTER.6cebbe60a644ce013839.png",
@@ -14,11 +14,11 @@
     "static/media/Emblem_IRON.png": "/lol-project/static/media/Emblem_IRON.9c3d63ce3cc7c09529b5.png",
     "index.html": "/lol-project/index.html",
     "main.73e2a637.css.map": "/lol-project/static/css/main.73e2a637.css.map",
-    "main.952b200d.js.map": "/lol-project/static/js/main.952b200d.js.map",
+    "main.140cbdfe.js.map": "/lol-project/static/js/main.140cbdfe.js.map",
     "787.2cbcecb3.chunk.js.map": "/lol-project/static/js/787.2cbcecb3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73e2a637.css",
-    "static/js/main.952b200d.js"
+    "static/js/main.140cbdfe.js"
   ]
 }
