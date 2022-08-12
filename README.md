@@ -1,7 +1,7 @@
 # League of Legends Project
 
 ### A project to search for summoner
-This is a React Project made for academic purposes that uses the Riot's publics API to Search for any "Summoner's" profile by nickname (on Summoner search route) or just directed by clicking on nickname's link (on Rank route).
+This is a React Project made for academic purposes that uses the Riot's publics API to Search for any "Summoner's" profile by nickname (on Summoner search route) or just directed by clicking on nickname's link (on Rank route). To clone this APP, make sure to generate an API KEY on [Riot Developer website](https://developer.riotgames.com/).
 
 ### The whole app use the respective APIs:
 Account-V1,
