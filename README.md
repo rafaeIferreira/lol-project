@@ -10,7 +10,7 @@ MATCH-V5,
 SUMMONER-V4,
 SPECTATOR-V4.
 
-# Link to project example:
+# Link to project Deploy:
 [League Project](https://rafaeiferreira.github.io/lol-project/#/)
 
 # notes:
